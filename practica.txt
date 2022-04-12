@@ -14,3 +14,7 @@ Hoy es e CEO de Platzi
 En vez de hablar de su historia hablaremos de su vida
 
 Otro commit para probar
+
+
+Mañana nos enfocaremos en su vida laboral 
+-----------------------------------------------
