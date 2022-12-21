@@ -2,13 +2,13 @@ import numpy as np
 # print(np.__version__)
 
 # --- Ejercicio 1
-# a = np.array([[1,2,3],
-#               [4,5,6]])
+a = np.array([[1,2,3],
+              [4,5,6]])
 
-# b = np.array([[10,11,12],
-#               [13,14,15]])
-# c = a + b
-# print(c)
+b = np.array([[10,11,12],
+              [13,14,15]])
+c = a + b*a
+print(c)
 
 
 # --- Ejercicio 2
