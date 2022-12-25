@@ -9,6 +9,37 @@ from collections import Counter
 
 
 
+#  Matplotlib Tutorial 3
+#  Excercise 2
+
+# plt.style.use("fivethirtyeight")
+
+# slices = [59219,55466,47544,36443,35917]
+# # slices = [59219,55466,47544,36443,35917,31991,27097,23030,20524,18523,18017,7920,7331,7201,5833]
+# labels = ['JavaScript', 'HTML/CSS', 'SQL', 'Python', 'Java']
+# # labels = ['JavaScript', 'HTML/CSS', 'SQL', 'Python', 'Java', 'Bash/Shell/PowerShell', 'C#', 'PHP', 'C++',
+# # 'TypeScript', 'C', 'Others(s)', 'Ruby', 'Go', 'Assembly']
+# explode=[0.1,0,0,0.3,0]
+# plt.pie(slices, labels=labels, explode=explode, shadow = True, startangle = 90, 
+#  autopct = '%1.1f%%',wedgeprops={'edgecolor':'black'})
+
+# plt.title("MyAwesome Pie Chart")
+# plt.tight_layout()
+# plt.show()
+
+#  Excercise 1
+# plt.style.use("fivethirtyeight")
+
+# slices = [120, 80, 30, 20]
+# labels = ['Sixty', 'Forty', 'Extra1', 'Extra2']
+# colors = ['blue', 'red', 'yellow', 'green']
+
+# plt.pie(slices, labels = labels, wedgeprops={'edgecolor': 'black'})
+
+# plt.title("My Awesome Chart")
+# plt.tight_layout()
+# plt.show()
+
 # Matplotlib Tutorial (Part 2)
 # data = pd.read_csv('data.txt')
 # ids = data['Responder_id']
