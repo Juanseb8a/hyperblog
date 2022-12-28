@@ -1,4 +1,5 @@
 import numpy as np
+from numpy.linalg import inv
 
 a = [1,2,11,6,8,18,2]
 na = np.array(a)
@@ -103,5 +104,43 @@ y = np.array([2,3,4])
 
 # dot product
 # print(np.dot(y,x))
+
+x = np.matrix([[1,2],[3,4]])
+y = np.matrix([[5,3],[8,7]])
+
+# Addition
+# print(x+y)
+# Substraction
+# print(x-y)
+# Multiplication
+A = np.matrix([[1,2],[3,4]])
+
+# hadmard multiplication
+# print(A*A)
+
+#  multiplication
+# print(np.multiply(A,A))
+
+#  inverse
+# print(inv(A))
+
+#  Transpose
+# print(A.T)
+
+#  Lección Broadcasting for Numpy
+# A = np.arange(20).reshape(5,4)
+# # print(A)
+
+# B = np.arange(5)
+# # print(B)
+
+# # print(A+B)
+
+# B = B.reshape(5,1)
+
+# print(A)
+# print(B)
+
+# print(A + B)
 
 
