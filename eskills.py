@@ -75,10 +75,33 @@ narr = np.array(arr)
 # print(narr[1:4,2:5])
 
 # concatenation row and column wise
-a = np.array([[1,2],[3,4]])
-b = np.array([5,6])
+# a = np.array([[1,2],[3,4]])
+# b = np.array([5,6])
 
 # c = np.row_stack((a,b))
-c = np.c_[a,b]
+# c = np.c_[a,b]
 
-print(c)
+# print(c)
+
+# Vector aritmetic
+#  Create numpy arrays
+x = np.array([1,2,3])
+y = np.array([2,3,4])
+
+# Addition
+# print(x+y)
+
+# Addition by a scalar
+# print(x+2)
+
+# Substraction
+# print(y-x)
+
+# Multiplication
+#  Hamard - Product
+# print(x*y)
+
+# dot product
+# print(np.dot(y,x))
+
+
