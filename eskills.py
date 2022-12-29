@@ -159,4 +159,15 @@ A = np.matrix([[1,2],[3,4]])
 # print(Ainv.dot(b))
 # # print(Ainv)
 
+# A = np.array([[1,2,3],[4,5,2],[2,8,5]])
 
+# b = np.array([5,10,15])
+
+# print(a)
+# print(b)
+
+# print(np.linalg.solve(A,b))
+
+# Ainv = np.linalg.inv(A)
+
+# print(Ainv.dot(b))
