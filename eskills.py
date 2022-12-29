@@ -171,3 +171,41 @@ A = np.matrix([[1,2],[3,4]])
 # Ainv = np.linalg.inv(A)
 
 # print(Ainv.dot(b))
+
+# Lesson: Basic Stats with numpy
+arr = [[1,2,3,4],[3,4,5,6],[7,8,9,6],[12,7,10,9],[2,11,8,10]]
+
+narr = np.array(arr)
+
+print(narr)
+
+#  Sum all values of the array
+# print(narr.sum())
+
+#  Column wise sum
+# print()
+# print(narr.sum(axis=0))
+
+# Row wise sum
+# print(narr.sum(axis=1))
+
+# mean and medians are measures of centre tendency
+#  row mean
+# print(narr.mean(axis=0))
+
+#  column median
+# print(np.median(narr,axis=1))
+
+#  variance in the data
+#  standard deviation
+# print(np.std(narr, axis=1))
+
+#  percentile
+# Value below which a given percentage of observations
+# print(np.percentile(narr, 50, axis = 1))
+
+
+
+
+
+
