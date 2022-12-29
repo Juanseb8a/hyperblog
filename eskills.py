@@ -143,4 +143,20 @@ A = np.matrix([[1,2],[3,4]])
 
 # print(A + B)
 
+# # Solve for equations with Numpy
+# A = np.array([[2,1],[1,-1]])
+# print(A)
+# print('----------')
+
+# b = np.array([4,-1])
+# print(b)
+# print('----------')
+
+# # Solve a linear matrix equation, or system of linear scalar equations
+# Ainv = np.linalg.inv(A)
+# print('----------')
+
+# print(Ainv.dot(b))
+# # print(Ainv)
+
 
