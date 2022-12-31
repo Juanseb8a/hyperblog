@@ -54,3 +54,40 @@ df = pd.DataFrame(d)
 # print(u)
 
 #  Reading json files
+# df = pd.read_json("skorea.json")
+# df = pd.read_json("https://api.github.com/repositories/858127/issues?per_page=5")
+# df.head(1)
+
+#  WRANGLING DATA
+#  Dealing with missing values (NAs)
+
+df = pd.DataFrame([[1,np.nan,2],[2,3,5],[np.nan,4,6]])
+print(df)
+
+# #  check if the data frames contains NA
+# print(df.isnull())
+
+# #  drop NA values
+# #  all rows with cells containing NA will be dropped
+# print(df.dropna())
+
+# # drop columns where cells have NAs
+# print(df.dropna(axis=1))
+
+# #  thresh parameter lets you specify a minimum of nin-null values for the row/column
+# # to be kept
+# print(df.dropna(thresh=2))
+
+
+#  Filling no Values (NA) cells
+#  fill NA entries with zero
+# print(df.fillna(0))
+
+# # specify a forward-fill to propagate the previous value forward
+# print(df.fillna(method="ffill"))
+
+# #  fill forward column wise
+# print(df.fillna(method="ffill", axis=1))
+
+# #  back-fill to propagate the bext values backwards
+# print(df.fillna(method="bfill"))
