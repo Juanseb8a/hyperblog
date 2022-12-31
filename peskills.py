@@ -62,7 +62,7 @@ df = pd.DataFrame(d)
 #  Dealing with missing values (NAs)
 
 df = pd.DataFrame([[1,np.nan,2],[2,3,5],[np.nan,4,6]])
-print(df)
+# print(df)
 
 # #  check if the data frames contains NA
 # print(df.isnull())
@@ -91,3 +91,20 @@ print(df)
 
 # #  back-fill to propagate the bext values backwards
 # print(df.fillna(method="bfill"))
+
+# Data handling: Basics of Conditional Data Selection
+# data = pd.read_csv('data.csv')
+
+# # print(data.head(n=6))
+
+# # Isolate a column
+# print(data['Countries'])
+
+# # Isolate 2 columns
+# print(data[['Countries', 'Name in English']])
+
+# # Isolate rows
+# print(data[3:10])
+
+# # conditional selection
+# print(data[data['Number of speakers']<5000])
