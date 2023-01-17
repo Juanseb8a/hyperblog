@@ -238,7 +238,49 @@ df = pd.DataFrame(data=df)
 
 # Pivoting
 data1 = pd.read_csv('ranking_table.csv')
-print(data1.head(5))
+# print(data1.head(5))
 
-print(data1.pivot_table(index='power_index', columns='progress', values='rank', aggfunc='sum'))
-print(data1.columns)
+# print(data1.pivot_table(index='power_index', columns='progress', values='rank', aggfunc='sum'))
+# print(data1.columns)
+
+#  Rank and sorting
+s = pd.Series(range(4), index=['d','a','b','c'])
+# print(s)
+
+#  sort from index a to d
+# print(s.sort_index())
+
+# columns will be arranged alphabetically
+# sorted = data.sort_index(axis=1)
+# print(sorted)
+
+#  columns will be arranged Z-A
+# print(data.sort_index(axis=1, ascending=False))
+
+#  Sort the values of a column in a table
+# print(data.sort_values(by='ID'))
+
+#  sort the values of two columns in a table
+# print(data.sort_values(by=['ID','Latitude']))
+
+# x = data.iloc[0:8,0:8]
+# # print(x.head(5))
+
+# x['ITCANBEANYTHING'] = x['ID'].rank(ascending=1)
+# print(x.head(6))
+
+# Video: Concatenate
+# df1 = pd.DataFrame([['a', 1],['b', 2]], columns=['letter', 'number'])
+# print(df1)
+
+# df2 = pd.DataFrame([['c', 3],['d', 4]],columns=['letter', 'number'])
+# print(df2)
+
+# df3 = pd.DataFrame([['c', 3, 'cat'], ['d', 4, 'dog']], columns=['letter', 'number', 'animal'])
+# print(df3)
+
+# print(pd.concat([df1, df2]))
+
+# # only columns common for both data frames are joined together
+# pd.concat([df1, df2], join="inner")
+
